@@ -1,0 +1,74 @@
+/* Icones */
+.carre {
+    width: 20vw;
+    max-width: 100px;
+    height: 20vw;
+    max-height: 100px;
+    background-color: rgb(53, 178, 255);
+    border: 0.25rem solid black;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    transition: all 0.3s ease;
+    font-size: 0.8rem;
+}
+  
+.carre img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.carre:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 1.25rem white;
+}
+
+/* Textes */
+.carre::after {
+    content: attr(data-text);
+    position: absolute;
+    border-radius: 1.25rem;
+    bottom: 0.625rem;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 0.3125rem 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    font-size: 0.7rem;
+}
+
+.carre:hover::after {
+    opacity: 1;
+    bottom: 0;
+}
+
+/* Media Queries pour différentes tailles d'écran */
+@media screen and (max-width: 768px) {
+    .carre {
+        width: 30vw;
+        height: 30vw;
+        max-width: 80px;
+        max-height: 80px;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carre {
+        width: 40vw;
+        height: 40vw;
+        max-width: 60px;
+        max-height: 60px;
+        font-size: 0.6rem;
+    }
+    
+    .carre::after {
+        font-size: 0.7rem;
+    }
+}

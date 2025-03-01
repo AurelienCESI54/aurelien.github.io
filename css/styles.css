@@ -1,0 +1,143 @@
+/* Fonts */
+@font-face {
+    font-family: 'undertale';
+    src: url('../ttf/undertale.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Main */
+body {
+    font-family: 'undertale', Arial, sans-serif;
+    color: white;
+
+    /* Arrière-plan */
+    background-image: linear-gradient(to top, darkblue, blue, skyblue);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.page-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.page-center > * {
+    margin-bottom: 10px; /* Ajout d'espaces */
+}
+
+.page-center > *:last-child {
+    margin-bottom: 0; /* Pas de marge pour dernier élément */
+}
+
+/* Barre de navigation - Structure de base */
+.navbar {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    opacity: 80%;
+    transition: all 0.5s ease;
+    background-image: linear-gradient(to right, darkgreen, green, rgb(0, 209, 0));
+    border: 4px solid black;
+    border-radius: 20px;
+}
+
+.navbar:hover {
+    opacity: 100%;
+}
+
+.navbar-toggle {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 15px;
+    display: block;
+}
+
+/* Barre de navigation - Liste et éléments */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    flex-direction: column;
+    display: flex;
+}
+
+.navbar.active ul {
+    max-height: 300px; /* 50px par éléments */
+    display: flex;
+}
+
+.navbar li {
+    padding: 15px;
+    width: 100%;
+}
+
+/* Barre de navigation - Styles des liens */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+
+.navbar a:hover {
+    color: lightgreen;
+    text-decoration: underline;
+}
+
+/* Easter-egg */
+#bulle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1;
+}
+
+/* Credits */
+.credits {
+    margin-top: auto;
+    padding: 15px 0px 15px 0px;
+    text-align: center; 
+    font-size: 18px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, lightblue, blue, darkblue, blue, lightblue);
+    z-index: 1000;
+    opacity: 40%;
+    transition: opacity 0.5s ease;
+    border-top: 5px solid;
+}
+
+.credits:hover {
+    opacity: 100%;
+}
+
+.credits h4 {
+    text-decoration: none;
+    justify-content: center;
+}
+  
