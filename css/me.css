@@ -1,0 +1,94 @@
+/* "Jeu" */
+.playground {
+    width: 450px;
+    height: 450px;
+    background-image: radial-gradient(circle at center, green, lightgreen);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 4px solid green;
+    border-radius: 20px;
+    position: relative;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.playground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/infos.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.movable-box {
+    width: 4%;
+    height: 4%;
+    background-color: orange;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: absolute;
+}
+
+
+/* Infos */
+.info-box {
+    width: 650px;
+    border-radius: 20px;
+    padding: 10px;
+    background-image: linear-gradient(to right, #ff8c00, #ff0080);
+    color: white;
+    overflow-y: auto;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+    max-width: 100%;
+}
+
+.info-box.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.info-box > div {
+    margin-bottom: 10px;
+}
+
+.info-box h4 {
+    margin-top: 0;
+}
+
+.info-box p {
+    margin-bottom: 0;
+}
+
+/* Media queries pour l'adaptation responsive */
+@media screen and (max-width: 1200px) {
+    .align {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .playground, .info-box {
+        width: 90%;
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .playground {
+        width: 90%;
+        height: 0;
+        padding-bottom: 90%; /* Maintient le ratio carré */
+    }
+
+    .info-box {
+        width: 90%;
+        max-width: none;
+    }
+}

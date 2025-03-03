@@ -1,5 +1,4 @@
 // Menu déroulant principal
-
 document.addEventListener('DOMContentLoaded', function() {
     const navbarToggle = document.getElementById('navbar-toggle');
     const navbar = document.querySelector('.navbar');
@@ -21,3 +20,33 @@ document.addEventListener('DOMContentLoaded', function() {
 document.querySelector('.carte').addEventListener('click', function() {
     this.classList.toggle('retournee');
 });
+
+// Créer le menu déroulant
+function createNavbar() {
+    const navbar = document.createElement('nav');
+    navbar.className = 'navbar';
+    navbar.innerHTML = `
+        <div class="navbar-toggle" id="navbar-toggle"><u>Explorer</u></div>
+        <ul>
+            <li><a href="main.html">Accueil</a></li>
+            <li><a href="me.html">A propos</a></li>
+            <li><a href="#atouts">Atouts</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    `;
+    document.body.prepend(navbar);
+}
+
+// Créer les crédits
+function createCredits() {
+    const credits = document.createElement('nav');
+    credits.className = 'credits';
+    credits.style.color = 'rgb(190, 225, 255)';
+    credits.innerHTML = `
+        Site Internet propose par Aurelien Sidaner - Images par Google
+        <br><a href="main.html" style="text-decoration: none; color: rgb(1, 191, 255);">Retour a l'accueil</a> - <a href="../cv.pdf" style="text-decoration: none; color: rgb(1, 191, 255);" download>Telecharger le CV (PDF)</a>
+    `;
+    document.body.appendChild(credits);
+}
+

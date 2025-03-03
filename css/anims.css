@@ -32,7 +32,6 @@
 
 .avant {
     background: linear-gradient(to top, darkgreen, green, lightgreen);
-    border: 0.25rem solid black;
     color: white;
 }
 
@@ -43,7 +42,6 @@
 
 .arriere {
     background-color: green;
-    border: 0.25rem solid black;
     color: white;
     transform: rotateY(180deg);
 }

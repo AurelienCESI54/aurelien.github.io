@@ -54,8 +54,7 @@ body {
     z-index: 1000;
     opacity: 80%;
     transition: all 0.5s ease;
-    background-image: linear-gradient(to right, darkgreen, green, rgb(0, 209, 0));
-    border: 4px solid black;
+    background-image: linear-gradient(to right, #ff8c00, #ff0080);
     border-radius: 20px;
 }
 
@@ -102,17 +101,8 @@ body {
 }
 
 .navbar a:hover {
-    color: lightgreen;
+    color: lightseagreen;
     text-decoration: underline;
-}
-
-/* Easter-egg */
-#bulle {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    transition: opacity 0.3s ease-in-out;
-    z-index: -1;
 }
 
 /* Credits */
@@ -127,12 +117,12 @@ body {
     width: 100%;
     background-image: linear-gradient(to right, lightblue, blue, darkblue, blue, lightblue);
     z-index: 1000;
-    opacity: 40%;
+    opacity: 70%;
     transition: opacity 0.5s ease;
     border-top: 5px solid;
 }
 
-.credits:hover {
+.credits:hover{
     opacity: 100%;
 }
 
