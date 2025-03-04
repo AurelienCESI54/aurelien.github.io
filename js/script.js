@@ -26,7 +26,7 @@ function createNavbar() {
     const navbar = document.createElement('nav');
     navbar.className = 'navbar';
     navbar.innerHTML = `
-        <div class="navbar-toggle" id="navbar-toggle"><u>Explorer</u></div>
+        <div class="navbar-toggle" id="navbar-toggle">Explorer</div>
         <ul>
             <li><a href="../index.html">Accueil</a></li>
             <li><a href="me.html">A propos</a></li>

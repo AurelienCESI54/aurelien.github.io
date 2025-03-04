@@ -102,8 +102,9 @@ body {
 
 .navbar a:hover {
     color: peachpuff;
-    text-decoration: underline;
+    font-size: 17.5px;
 }
+
 
 /* Credits */
 .credits {

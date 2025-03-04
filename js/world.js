@@ -96,8 +96,8 @@ function updateDisplay(box, messageDisplay) {
         showInfoBox(`
             <h4><u>Comment suis-je arrive au CESI ?</u></h4>
             <p>
-                Apres une periode au college Langevin Wallon (Blainville-sur-l'eau) extremement difficile, je me suis oriente vers un lycee prive generaliste, Saint Pierre-Fourier (Luneville), qui me permetterait de me fixer sur mon orientation definitive.<br><br>
-                Durant ces 3 annees, j'ai suivi les specialites Mathematiques - avec partie Experte en Terminale -, NSI et Physique-Chimie (arrêtée en Premiere), avec option Theatre, et grace a ca, j'ai eu l'idee de m'orienter dans le D.I., parce qu'il s'agit d'un domaine d'avenir ou la reconversion professionnelle est aisee.<br><br>
+                Apres une periode au college Langevin Wallon (Blainville-sur-l'eau) extremement difficile, je me suis oriente vers un lycee prive generaliste, Saint Pierre Fourier (Luneville), qui me permetterait de me fixer sur mon orientation definitive.<br><br>
+                Durant ces 3 annees, j'ai suivi les specialites Mathematiques - avec partie Experte en Terminale - NSI et Physique-Chimie (arretee en Premiere), avec option Theatre, et grace a ca, j'ai eu l'idee de m'orienter dans le D.I., un domaine d'avenir ou la reconversion professionnelle est aisee.<br><br>
                 Finalement, j'en suis a avoir une formation de 3 ans au CESI : 2 ans de formation sous status etudiant suivi d'une annee en alternance. Et je suis loin d'en etre decu !<br><br>
                 Pour mon futur metier, je pense partir sur de la creation de logiciels, avec une promiximite avec des clients. Les details ne sont pas pensees pour l'instant.
             </p>
@@ -107,10 +107,11 @@ function updateDisplay(box, messageDisplay) {
         showInfoBox(`
             <h4><u>Je suis un peu different...</u></h4>
             <p>
-                Contrairement a la plupart des personnes de mon age, je suis quelqu'un de tres sensible a l'ambiance : tout ce qui est bruit et mouvement me fatigue tres rapidement.<br>
-                De plus, mes reactions sont souvent decales par rapport a certaines situations; couple a une introversion tres presente (parler de mes avis et de mes activites personnels est tres difficile pour moi), cela me rend peu sociable, meme - voire surtout - pour des proches et/ou personnes de confiance.<br><br>
-                Cependant, grace a des conditions de travail adaptes, je poursuis une formation de D.I. dans une promotion de 15 personnes, comme un jeune adulte "lambda" le ferait.<br>
-                Pour dire que ma vie n'est vraiment pas aise, mais que cela ne m'empeche pas de decouvrir un metier que j'aimerais faire.
+                Contrairement a la plupart des personnes de mon age, je suis quelqu'un de tres sensible a l'ambiance : tout ce qui est bruit et mouvement me fatigue tres rapidement. De plus, mes reactions sont souvent decales par rapport a certaines situations.<br>
+                Couple a une introversion tres presente (parler de mes avis et de mes activites personnelles est tres difficile pour moi), cela me rend peu sociable, y compris - peut-etre meme surtout - pour des proches et/ou personnes de confiance.<br><br>
+                Cependant, grace a des conditions de travail adaptes, je poursuis une formation de D.I. dans une promotion de 15 personnes, comme un jeune adulte passionne "lambda" le ferait.<br><br>
+                Tout cela pour dire que ma vie n'est vraiment pas aise, mais que cela ne m'empeche pas de decouvrir un metier que j'aimerais faire.<br>
+                Pour ceux qui se posent la question, j'ai une reconnaissance RQTH de mon handicap.
             </p>
         `);
 
