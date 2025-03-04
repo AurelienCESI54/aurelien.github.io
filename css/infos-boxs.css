@@ -66,10 +66,15 @@
 }
 
 .toggle-btn {
+    opacity: 0.7;
     background: none;
     border: none;
     font-size: 24px;
     cursor: pointer;
+}
+
+.toggle-btn:hover {
+    opacity: 1;
 }
 
 /* Media Queries pour la responsivité */
