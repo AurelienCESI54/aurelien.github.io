@@ -25,6 +25,7 @@
     <div class="page-center">
         <h2><u>Mes projets</u></h2>
         <div class="align">
+
             <div class="box">
                 <div class="title-container">
                     <h2 class="title">Titre souligne</h2>
@@ -45,10 +46,12 @@
                     <br>Description en italique. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
                 <img class="image" src="../images/placeholder.png" alt="Image placeholder">
+                
             </div>
         </div>
 
         <div class="align">
+
             <div class="box">
                 <div class="title-container">
                     <h2 class="title">Titre souligne</h2>
@@ -70,6 +73,7 @@
                 </p>
                 <img class="image" src="../images/placeholder.png" alt="Image placeholder">
             </div>
+
         </div>
     </div>
 
@@ -80,21 +84,7 @@
     </nav>
 
     <script src="../js/script.js"></script>
-
-    <script>
-        document.querySelectorAll('.toggle-btn').forEach(button => {
-            button.addEventListener('click', function() {
-                const description = this.closest('.box').querySelector('.description');
-                if (description.style.display === 'none' || description.style.display === '') {
-                    description.style.display = 'block';
-                    this.textContent = '▲';
-                } else {
-                    description.style.display = 'none';
-                    this.textContent = '▼';
-                }
-            });
-        });
-    </script>
+    <script src="../js/info-box.js"></script>
     
 </body>
 </html>
