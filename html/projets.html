@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Aurelien - A propos</title>
-    <link rel="stylesheet" href="../css/projets.css">
+    <title>Aurelien - Mes projets</title>
+    <link rel="stylesheet" href="../css/infos-boxs.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/anims.css">
 </head>
@@ -23,8 +23,55 @@
 
     <!-- Elements -->
     <div class="page-center">
-        Placeholder
-    </div>    
+        <h2><u>Mes projets</u></h2>
+        <div class="align">
+            <div class="box">
+                <div class="title-container">
+                    <h2 class="title">Titre souligne</h2>
+                    <button class="toggle-btn">▼</button>
+                </div>
+                <p class="description">
+                    <br>Description en italique. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <img class="image" src="../images/placeholder.png" alt="Image placeholder">
+            </div>
+
+            <div class="box">
+                <div class="title-container">
+                    <h2 class="title">Titre souligne</h2>
+                    <button class="toggle-btn">▼</button>
+                </div>
+                <p class="description">
+                    <br>Description en italique. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <img class="image" src="../images/placeholder.png" alt="Image placeholder">
+            </div>
+        </div>
+
+        <div class="align">
+            <div class="box">
+                <div class="title-container">
+                    <h2 class="title">Titre souligne</h2>
+                    <button class="toggle-btn">▼</button>
+                </div>
+                <p class="description">
+                    <br>Description en italique. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <img class="image" src="../images/placeholder.png" alt="Image placeholder">
+            </div>
+
+            <div class="box">
+                <div class="title-container">
+                    <h2 class="title">Titre souligne</h2>
+                    <button class="toggle-btn">▼</button>
+                </div>
+                <p class="description">
+                    <br>Description en italique. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <img class="image" src="../images/placeholder.png" alt="Image placeholder">
+            </div>
+        </div>
+    </div>
 
     <!-- Credits -->
     <nav class="credits" style="color: rgb(190, 225, 255)">
@@ -33,6 +80,21 @@
     </nav>
 
     <script src="../js/script.js"></script>
+
+    <script>
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const description = this.closest('.box').querySelector('.description');
+                if (description.style.display === 'none' || description.style.display === '') {
+                    description.style.display = 'block';
+                    this.textContent = '▲';
+                } else {
+                    description.style.display = 'none';
+                    this.textContent = '▼';
+                }
+            });
+        });
+    </script>
     
 </body>
 </html>

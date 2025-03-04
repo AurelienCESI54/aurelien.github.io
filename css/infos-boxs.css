@@ -1,0 +1,39 @@
+.page-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box {
+    background-image: linear-gradient(to right, #1ABC9C, #87CEEB);
+    border: 2px solid skyblue;
+    border-radius: 20px;
+    padding: 20px;
+    width: 400px;
+    position: relative;
+}
+.title-container {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+.title {
+    text-decoration: underline;
+    margin-right: 10px;
+}
+.description {
+    font-style: italic;
+    display: none;
+}
+.image {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    height: auto;
+}
+.toggle-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
