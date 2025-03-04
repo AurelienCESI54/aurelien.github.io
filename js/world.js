@@ -53,36 +53,67 @@ function updateDisplay(box, messageDisplay) {
     const infoBox = document.querySelector('.info-box');
     
     // Vérifier si le pion est dans la zone spécifiée (ajustez ces valeurs selon vos besoins)
-    if (centerX >= 4 && centerX <= 20 && centerY >= 22 && centerY <= 38) {
-        showInfoBox("<h4>Info 1</h4><p>Description de l'info 1</p>");
-    } else if (centerX >= 0 && centerX <= 5 && centerY >= 0 && centerY <= 5) {
+    if (centerX >= 0 && centerX <= 5 && centerY >= 0 && centerY <= 5) {
         showInfoBox(`
-            <u>Commandes</u><br>
+            <h4><u>Commandes</u></h4>
             <p>
                 Deplacer le pion orange avec les touches directionnelles.<br>
                 Une fois sur la case souhaitee, l'information s'affichera ici.
             </p>
         `);
+
     } else if (centerX >= 69 && centerX <= 84 && centerY >= 4 && centerY <= 20) {
         showInfoBox(`
-            <h4>Info 2</h4>
-            <p>Description de l'info 2</p>
+            <h4><u>Qui est Aurelien ?</u></h4>
+            <p>
+                Je suis un jeune francais ne en 2006 a Cormeilles-en-Parisis, qui vit actuellement dans la region du Grand-Est.<br>
+                Passionne d'informatique depuis tout jeune, je suis aujourd'hui etudiant en developpement informatique au CESI de Vandoeuvre-les-Nancy, et ce, depuis 2024.<br>
+                Plus d'informations sur moi sur les autres points.
+            </p>
         `);
+
+    } else if (centerX >= 4 && centerX <= 20 && centerY >= 22 && centerY <= 38) {
+        showInfoBox(`
+            <h4><u>Ce que j'aime bien faire</u></h4>
+            <p>
+                En dehors des cours, j'aime bien jouer a des jeux et aller me balader : ca me permet de m'evader de mon quotidien sympatique, mais tendu par moments.<br>
+                De plus, je cree occasionnellement du contenu sur Internet, notamment des modifications pour un jeu de rythme populaire et des videos YouTube.<br><br>
+                Pour plus d'infos, voir les autres points et la section "Projets" du site. 
+            </p>
+        `);
+
     } else if (centerX >= 51 && centerX <= 67 && centerY >= 42 && centerY <= 58) {
         showInfoBox(`
-            <h4>Info 3</h4>
-            <p>Description de l'info 3</p>
+            <h4><u>Mon quotidien</u></h4>
+            <p>
+                Durant ma semaine, je suis des etudes au CESI, ou je realise souvent des projets de programmation, comme un jeu de l'oie en Python ou un site Internet en HTML.<br>
+                En dehors, je passe mes journees libres a me balader, jouer a des jeux et avancer sur mes projets professionnels et personnels.<br><br>
+                Pour plus d'infos, voir la section "Projets" du site.
+            </p>
         `);
+
     } else if (centerX >= 27 && centerX <= 42 && centerY >= 78 && centerY <= 93) {
         showInfoBox(`
-            <h4>Info 4</h4>
-            <p>Description de l'info 4</p>
+            <h4><u>Comment suis-je arrive au CESI ?</u></h4>
+            <p>
+                Apres une periode au college Langevin Wallon (Blainville-sur-l'eau) extremement difficile, je me suis oriente vers un lycee prive generaliste, Saint Pierre-Fourier (Luneville), qui me permetterait de me fixer sur mon orientation definitive.<br><br>
+                Durant ces 3 annees, j'ai suivi les specialites Mathematiques - avec partie Experte en Terminale -, NSI et Physique-Chimie (arrêtée en Premiere), avec option Theatre, et grace a ca, j'ai eu l'idee de m'orienter dans le D.I., parce qu'il s'agit d'un domaine d'avenir ou la reconversion professionnelle est aisee.<br><br>
+                Finalement, j'en suis a avoir une formation de 3 ans au CESI : 2 ans de formation sous status etudiant suivi d'une annee en alternance. Et je suis loin d'en etre decu !<br><br>
+                Pour mon futur metier, je pense partir sur de la creation de logiciels, avec une promiximite avec des clients. Les details ne sont pas pensees pour l'instant.
+            </p>
         `);
+
     } else if (centerX >= 78 && centerX <= 93 && centerY >= 80 && centerY <= 96) {
         showInfoBox(`
-            <h4>Info 5</h4>
-            <p>Description de l'info 5</p>
+            <h4><u>Je suis un peu different...</u></h4>
+            <p>
+                Contrairement a la plupart des personnes de mon age, je suis quelqu'un de tres sensible a l'ambiance : tout ce qui est bruit et mouvement me fatigue tres rapidement.<br>
+                De plus, mes reactions sont souvent decales par rapport a certaines situations; couple a une introversion tres presente (parler de mes avis et de mes activites personnels est tres difficile pour moi), cela me rend peu sociable, meme - voire surtout - pour des proches et/ou personnes de confiance.<br><br>
+                Cependant, grace a des conditions de travail adaptes, je poursuis une formation de D.I. dans une promotion de 15 personnes, comme un jeune adulte "lambda" le ferait.<br>
+                Pour dire que ma vie n'est vraiment pas aise, mais que cela ne m'empeche pas de decouvrir un metier que j'aimerais faire.
+            </p>
         `);
+
     } else {
         hideInfoBox();
     }    

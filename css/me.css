@@ -1,7 +1,7 @@
 /* "Jeu" */
 .playground {
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     background-image: radial-gradient(circle at center, green, lightgreen);
     background-size: cover;
     background-position: center;
@@ -38,7 +38,8 @@
 
 /* Infos */
 .info-box {
-    width: 650px;
+    width: 680px;
+    height: 320px;
     border-radius: 20px;
     padding: 10px;
     background-image: linear-gradient(to right, #ff8c00, #ff0080);
