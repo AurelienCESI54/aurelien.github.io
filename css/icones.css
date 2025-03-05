@@ -17,6 +17,7 @@
     padding: 2%;
     transition: all 0.2s ease;
     font-size: 0.8rem;
+    cursor: pointer;
 }
 
 .carre img {
@@ -33,7 +34,7 @@
 .carre::after {
     content: attr(data-text);
     position: absolute;
-    border-radius: 1.25rem;
+    border-radius: 0.5rem;
     bottom: 0.625rem;
     left: 0;
     width: 100%;
@@ -43,6 +44,7 @@
     opacity: 0;
     transition: all 0.3s ease;
     font-size: 0.7rem;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .carre:hover::after {

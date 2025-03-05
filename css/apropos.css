@@ -40,7 +40,7 @@
 /* Infos */
 .info-box {
     width: 680px;
-    height: 320px;
+    height: 325px;
     border-radius: 20px;
     padding: 10px;
     background-image: linear-gradient(to bottom, 
@@ -78,27 +78,39 @@
 }
 
 /* Exception : infos cartes */
-.info-box-alt {
-    width: 680px;
+#info-box-alt {
+    width: 680px; /* Largeur de base */
+    max-width: 90%; /* Pour que la boîte ne dépasse pas 90% de l'écran */
     border-radius: 20px;
     padding: 10px;
-    background-image: linear-gradient(to bottom, 
-    #FFC107,
-    #FF9900,
-    #FF6600,
-    #FF0000,
-    #660033);
+    background-image: linear-gradient(
+        to bottom,
+        #FFC107,
+        #FF9900,
+        #FF6600,
+        #FF0000,
+        #660033
+    );
     border: 2px solid rgb(189, 51, 0);
-    border-radius: 20px;
     box-shadow: 0 0 1.25rem rgb(189, 51, 0);
     color: white;
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-    opacity: 1;
-    visibility: visible;
-    max-width: 100%;
+    margin: 0 auto; /* Centre la boîte horizontalement */
+    display: none; /* Cache initialement */
 }
 
-.info-box-alt.hidden {
-    opacity: 0;
-    visibility: hidden;
+#info-box-alt h3 {
+    font-size: 1.2em; /* Taille relative */
+    margin-bottom: 0.5em;
+}
+
+#info-box-alt p,
+#info-box-alt li {
+    font-size: 1em; /* Taille relative */
+    line-height: 1.4;
+}
+
+.image-alt {
+    max-width: 50px; /* Taille maximale de l'image */
+    height: auto;
+    vertical-align: middle; /* Aligne verticalement avec le texte */
 }

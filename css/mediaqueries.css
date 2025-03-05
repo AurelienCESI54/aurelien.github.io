@@ -1,16 +1,20 @@
 @media screen and (max-width: 1200px) {
     .align {
-        flex-direction: column;
         align-items: center;
     }
 
     .playground, .info-box {
-        width: 90%;
+        width: 95%;
         max-width: 450px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
+
+    .align {
+        flex-direction: column;
+    }
+
     .box {
         width: 80%;
     }
@@ -22,9 +26,9 @@
     .carre {
         width: 30vw;
         height: 30vw;
-        max-width: 80px;
-        max-height: 80px;
-        font-size: 0.7rem;
+        max-width: 120px;
+        max-height: 120px;
+        font-size: 0.8rem;
     }
 
     .carte {
@@ -39,6 +43,11 @@
     .arriere p {
         font-size: calc(0.7rem + 1vw);
     }
+
+    .credits {
+        font-size: 16px;
+        padding: 5px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -49,7 +58,7 @@
     }
 
     .info-box {
-        width: 90%;
+        width: 80%;
         max-width: none;
     }
 
@@ -82,8 +91,8 @@
     .carre {
         width: 40vw;
         height: 40vw;
-        max-width: 60px;
-        max-height: 60px;
+        max-width: 100px;
+        max-height: 100px;
         font-size: 0.6rem;
     }
     
@@ -101,6 +110,16 @@
     }
 
     .arriere p {
-        font-size: calc(0.6rem + 1vw);
+        font-size: calc(0.9rem + 1vw);
     }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .credits {
+        font-size: 13px;
+        padding: 5px;
+    }
+
 }
