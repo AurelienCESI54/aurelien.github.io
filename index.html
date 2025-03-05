@@ -2,28 +2,29 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Aurelien - Accueil</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/anims.css">
+    <title>Aurelien - Portfolio</title>
     <link rel="icon" type="image/png" href="images/cool.png">
+
+    <!-- Fichiers CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/credits.css">
+    <link rel="stylesheet" href="css/carte.css">
+    <link rel="stylesheet" href="css/apropos.css">
+    <link rel="stylesheet" href="css/icones.css">
+    <link rel="stylesheet" href="css/box.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
 </head>
 <body>  
-
-    <!-- Menus -->
-    <nav class="navbar">
-        <div class="navbar-toggle" id="navbar-toggle">Explorer</div>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="html/me.html">A propos</a></li>
-            <li><a href="html/atouts.html">Atouts</a></li>
-            <li><a href="html/projets.html">Projets</a></li>
-            <li><a href="html/call.html">Contacts</a></li>
-        </ul>
-    </nav>
-
-    <!-- Elements -->
-    <div class="page-center">
+    <!-- Accueil -->
+    <br><br>
+    <div id="accueil" class="page-center">
+        <div style="z-index: 1000; font-size: 20px;">
+            <center>
+                La version mobile de cette page est en cours de developpement.
+                <br>Merci de votre comprehension.
+            </center>
+        </div>
+        <br><br>
         <div class="carte">
             <div class="face avant">
                 <h1>Bienvenue sur mon site !</h1>
@@ -35,47 +36,135 @@
             <div class="face arriere">
                 <p>
                     Je suis un jeune francais passionne par le developpement informatique, les jeux videos et les creations communautaires.
-                    <br><br>Si vous voulez en savoir plus sur moi, cliquer sur un bouton pour commencer la decouverte de mon site Internet.
+                    <br><br>Si vous voulez en savoir plus sur moi, decouvrez mon portfolio, fait avec grande joie :)
                 </p>
             </div>
         </div>
-        <br>      
-    
-        <!-- Boutons -->
-        <div class="align">
-            <a href="html/me.html">
-                <div class="carre" data-text="A propos">
-                    <img src="images/main/me.png" alt="Identité">
-                </div>
-            </a>
-
-            <a href="html/atouts.html">
-                <div class="carre" data-text="Atouts">
-                    <img src="images/main/todo.png" alt="Atouts">
-                </div>
-            </a>
-
-            <a href="html/projets.html">
-                <div class="carre" data-text="Projets">
-                    <img src="images/main/fun.png" alt="Projets">
-                </div>
-            </a>
-
-            <a href="html/call.html">
-                <div class="carre" data-text="Contacts">
-                    <img src="images/main/call.png" alt="Contacts">
-                </div>
-            </a>
-        </div>
+        <br>
     </div>    
+
+    <!-- A propos -->
+    <div id="apropos" class="page-center">
+        <center>
+            <h2><u>A propos (qui est Aurelien ?)</u></h2>
+            La version mobile du jeu ne fonctionne pas pour l'instant. Avec toutes mes excuses.
+        </center>
+        <div class="align">
+            <div class="playground">
+                <div class="movable-box"></div>
+            </div>
+            <div class="info-box">
+                <br><div id="message-display"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cases -->
+    <div id="atouts" class="page-center">
+        <h2><u>Plus d'informations</u></h2>
+        <br><center>Certaines informations affichees ici sont directement tirees du CV.</center>
+        <br>
+        <div class="align">
+            <div class="carre" data-info="atouts-di" data-text="Mes atouts en tant que D.I.">
+                <img src="images/capacites/tools.png" alt="Code">
+            </div>
+            <div class="carre" data-info="atouts-humain" data-text="Mes atouts en tant qu'humain">
+                <img src="images/capacites/human.png" alt="Humain">
+            </div>
+            <div class="carre" data-info="projet-oie" data-text="Projet d'etudes : Jeu de l'Oie">
+                <img src="images/projets/goose.png" alt="Oie - Untitled Goose Game">
+            </div>
+            <div class="carre" data-info="projet-matching" data-text="Projet d'etudes : Matching">
+                <img src="images/projets/search.png" alt="Recherche">
+            </div>
+        </div>
+        <br>
+        <div class="align">
+            <div class="carre" data-info="projet-fnf" data-text="Projet personnel : Mods Friday Night Funkin'">
+                <img src="images/projets/fnf.png" alt="Logo Friday Night Funkin'">
+            </div>
+            <div class="carre" data-info="projet-youtube" data-text="Projet personnel : YouTube">
+                <img src="images/projets/youtube.png" alt="Youtube">
+            </div>
+            <div class="carre" data-info="liens-aurelien" data-text="Me contacter">
+                <img src="images/contacts/aurelien.png" alt="Aurelien">
+            </div>
+            <div class="carre" data-info="liens-cesi" data-text="Contacter le CESI">
+                <img src="images/contacts/cesi.png" alt="CESI">
+            </div>
+        </div>
+        
+        <div id="info-box" class="info-box-alt" style="display: none;"></div>
+        
+        <div id="atouts-di" style="display: none;">
+            <h3>Mes atouts en tant que D.I.</h3>
+            <u>Logiciels maitrises</u> :
+            <br><br><img class="image-alt" src="images/capacites/Perplexity.png" alt="Perplexity"> Perplexity (IA) 
+            <br><br><img class="image-alt" src="images/capacites/VSC.png" alt="VSC"> Visual Code Studio 
+            <br><br><img class="image-alt" src="images/capacites/drawio.png" alt="DrawIO"> draw.io  
+            <br><br><img class="image-alt" src="../images/capacites/Shotcut.png" alt="Shotcut"> Shotcut                  
+            <br><br>
+            <br><u>Langages maitrises</u> :
+            <br><br><img class="image-alt" src="images/capacites/python.png" alt="Python"> Python 
+            <br><br><img class="image-alt" src="images/capacites/html.png" alt="HTML"> HTML/CSS
+        </div>
+
+        <div id="atouts-humain" style="display: none;">
+            <h3>Mes atouts en tant qu'humain</h3>
+            <ul>
+                <li>Presentation orale</li>
+                <li>Communication</li>
+                <li>Planification</li>
+                <li>Autonomie</li>
+            </ul>
+        </div>
+        
+        <div id="projet-oie" style="display: none;">
+            <h3>Jeu de l'oie en Python</h3>
+            <p>Le but : reflechir et realiser un jeu de l'oie aux regles nombreuses, en langage Python a l'aide de la bibliotheque TKinter pour la partie graphique</p>
+            <p>Le projet en soi etait sympa a realiser, car on utilise un langage que je maitrise bien et qui ne necessite "que" de reflechir, mais a cause de problemes de communications avec mon binome, ce fut tres difficile moralement.</p>
+            <p>Resultat obtenu : excellent</p>
+            <a href="download/Jeu de l'Oie.zip" download style="text-decoration: none; color: gold">Telecharger le projet</a>
+        </div>
+        
+        <div id="projet-matching" style="display: none;">
+            <h3>Site de recherche "Matching"</h3>
+            <p>Le but : creer un site Internet de recherche d'informations dans des langages adaptes (HTML/CSS/Javascript), a l'aide d'une base de donnees hebergee sur MySQL Serveur</p>
+            <p>J'ai beaucoup aime faire ce projet, parce qu'en plus de travailler sur des technologies que je comprends, j'ai pu sentir un veritable travail d'equipe avec ma partenaire de travail.</p>
+            <p>Apres la frustration du Jeu de l'Oie, ca m'a fait du bien, et j'ai vraiment pu decouvrir ce que signifiait travailler avec les autres.</p>
+            <p>Resultat obtenu : excellent</p>
+            <a href="download/Matching.zip" download style="text-decoration: none; color: gold">Telecharger le projet</a>
+        </div>
+        
+        <div id="projet-fnf" style="display: none;">
+            <h3>Mods Friday Night Funkin'</h3>
+            <p>Friday Night Funkin' (FNF en abrege) est un jeu video de rythme developpe par Newgrounds et sorti en 2020, tres populaire encore aujourd'hui. Il a la particularite d'etre open source, permettant aux fans de creer des modifications ou des ajouts a leur guise.</p>
+            <p>Mon but : rendre certaines musiques creees par des fans completement jouables</p>
+            <p>En utilisant les outils integres dans le moteur populaire Psych Engine, et en codant en lua et json les elements, je cree pleins de petites extensions qui permettent de jouer a des remixs de musiques du jeu (ou de mods) bien connus de la communaute.</p>
+            <p>Etant un grand fan du jeu de base, j'adore creer ces modifications, parce que le simple fait de voir des chansons que j'adore etre jouables et etre jouees par la communaute me rend heureux de ce que je fais : j'y mets de ma motivation, et ca paye !</p>
+            <a href="https://gamebanana.com/members/submissions/mods/1989022" style="text-decoration: none; color: gold">Voir mes projets</a>
+        </div>
+        
+        <div id="projet-youtube" style="display: none;">
+            <h3>Chaine YouTube</h3>
+            <p>En association avec mes mods FNF (voir ci-contre), je cree des videos pour presenter mes creations.</p>
+            <p>En soi, il ne s'agit pas vraiment de projets, mais plus d'un loisir que je fais de temps a autre, et ca me plait beaucoup : en utilisant un logiciel de montage nomme Shotcut, je fais des petits montages videos et comme ma chaine est en anglais, cela m'entraine un peu a trouver mes mots pour parler de ce que je fais.</p>
+            <p>J'adore creer du contenu pour d'autres personnes, meme si parfois cela peut virer a l'addiction. Rien d'important, mais si je m'investis dans quelque chose que personne ne regarde ou n'utilise, ca me frustre.</p>
+            <p>Enfin, ca reste un loisir creatif que j'aime bien faire de temps en temps.</p>
+            <a href="https://www.youtube.com/@aureor" style="text-decoration: none; color: gold">Voir la chaine</a>
+        </div>        
+    </div>
+
+    <br><br><br><br><br><br>
 
     <!-- Credits -->
     <nav class="credits" style="color: rgb(190, 225, 255)">
         Site Internet propose par Aurelien Sidaner - Images par Google
-        <br><a href="index.html" style="text-decoration: none; color: rgb(1, 191, 255);">Retour a l'accueil</a> - <a href="CV_Aurelien_2025.pdf" style="text-decoration: none; color: rgb(1, 191, 255);" download>Telecharger le CV (PDF)</a>
+        <br><a href="#accueil" style="text-decoration: none; color: rgb(1, 191, 255);">Retour a l'accueil</a> - <a href="download/CV_Aurelien_2025.pdf" style="text-decoration: none; color: rgb(1, 191, 255);" download>Telecharger le CV (PDF)</a>
     </nav>
 
+    <script src="js/info-box.js"></script>
     <script src="js/script.js"></script>
-    
+    <script src="js/world.js"></script>
 </body>
 </html>
